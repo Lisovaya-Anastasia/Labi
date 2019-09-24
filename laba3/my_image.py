@@ -1,5 +1,17 @@
 import math
 from graph import *
+def update():
+    if xCoord(obj) >=450:
+        return()
+    moveObjectBy(obj, 2, 0)
+    
+#onTimer(update, 50)
+
+def keyPressed(event):
+    if event.keycode == VK_ESCAPE:
+        close()
+onKey(keyPressed)
+
 
 canvasSize(512, 512)
 penSize(3)
@@ -25,9 +37,18 @@ polygon([(130, 290), (120, 270), (120, 300)])
 polygon([(170, 290), (180, 270), (180, 300)])
 
 
+
 penColor("#AD522D")
 brushColor("#CD853F")
-circle(150, 315, 35) 
+circle(150, 315, 35)
+
+penColor("#000000")
+brushColor("#00B000")
+circle(135, 310, 5)
+circle(165, 310, 5)
+
+penColor("#AD522D")
+brushColor("#CD853F") 
 def oval():
     b=50
     a=80
@@ -40,4 +61,12 @@ def oval():
         points.append((x, y))
     polygon(points)
 oval()
+
+brushColor("#808080")
+x=120
+y=400
+obj=circle(x, y, 20)
+#onKey(keyPressed)
+onTimer(update, 50)
+
 run()
