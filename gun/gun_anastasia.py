@@ -201,10 +201,10 @@ from gun import *
 root = tk.Tk()
 fr = tk.Frame(root)
 root.geometry('800x600')
-canv = tk.Canvas(root, bg='#7ebfc3')
+canv = tk.Canvas(root, bg='#00FF00')
 canv.pack(fill=tk.BOTH, expand=1)
-colors2 = ['#b5dfe5', '#437f83', '#a0d2d8', '#5e9fa3', '#d2f1f6']
-colors1 = ['#ae215b', '#c1317e']
+colors2 = ['#b5dfe5', '#83435d', '#d8bba0', '#8f21ae', '#d3d2f6']
+colors1 = ['#a9ae21', '#ae5021']
 
 t1 = Target(canv)
 screen1 = canv.create_text(400, 300, text='', font='28')
