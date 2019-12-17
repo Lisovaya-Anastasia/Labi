@@ -1,10 +1,7 @@
 from random import randrange as rnd, choice
 import math
 import time
-
-colors2 = ['#b5dfe5', '#437f83', '#a0d2d8', '#5e9fa3', '#d2f1f6']
-colors1 = ['#ae215b', '#c1317e']
-
+from gun import *
 
 class Ball():
     def __init__(self, canv, x=40, y=450):
