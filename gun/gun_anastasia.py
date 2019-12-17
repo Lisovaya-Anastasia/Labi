@@ -1,7 +1,7 @@
 from random import randrange as rnd, choice
 import math
 import time
-from gun import *
+
 
 class Ball():
     def __init__(self, canv, x=40, y=450):
@@ -196,7 +196,7 @@ import tkinter as tk
 import math
 import time
 import datetime
-from gun import *
+
 
 root = tk.Tk()
 fr = tk.Frame(root)
